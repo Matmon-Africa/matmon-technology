@@ -166,7 +166,7 @@ export default function Home() {
               <p>
                 We are a technology group that treats buildings as hardware and
                 data as the operating system. Based in Kisumu, we are filling
-                the gap in Kenya’s digital landscape.
+                the gap in Kenya{"’"}s digital landscape.
               </p>
             </div>
             <Button
@@ -177,13 +177,8 @@ export default function Home() {
             </Button>
           </div>
           <div className="relative order-2 lg:order-1">
-            <GlowSphere
-              color="blue"
-              size="lg"
-              className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20"
-            />
             <img
-              src="/infra-sphere.png"
+              src="/infra-sphere.jpg"
               alt="Data center infrastructure"
               className="w-full h-auto max-w-lg mx-auto drop-shadow-[0_0_50px_rgba(0,112,255,0.3)]"
             />

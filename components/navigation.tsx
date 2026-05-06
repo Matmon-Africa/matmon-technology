@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
+
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +26,14 @@ export function Navigation() {
           href="/"
           className="flex items-center gap-2 font-bold text-base sm:text-lg group"
         >
-          <div className="h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-primary group-hover:shadow-[0_0_15px_rgba(255,30,30,0.8)] transition-all duration-300"></div>
-          <span className="tracking-tighter">MATMON TECHNOLOGY</span>
+          <Image
+            src="/logos/matmon-tech-text.svg"
+            alt="MATMON TECHNOLOGY"
+            className="h-6 w-auto sm:h-8"
+            width={200}
+            height={32}
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

@@ -3,6 +3,7 @@ import { LayoutWrapper } from '@/components/layout-wrapper';
 import { SectionContainer } from '@/components/section-container';
 import { CTAButtonPair } from '@/components/cta-button-pair';
 import { GlowSphere } from '@/components/glow-sphere';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Matmon Technology - Sovereign Data Center',
@@ -48,9 +49,10 @@ export default function About() {
           <div className="glass-card aspect-video overflow-hidden group">
             <div className="w-full h-full bg-gradient-to-br from-primary/20 via-background to-secondary/10 flex items-center justify-center relative">
               <GlowSphere color="red" size="md" className="opacity-20" />
-              <div className="text-center relative z-10">
-                <p className="text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-primary transition-colors">Operations Site: Kisumu</p>
-              </div>
+              <img src="/site01.jpg" alt="Hero" className="w-full h-full object-cover rounded-md" />
+              <div className="text-center absolute inset-x-0 bottom-4">
+                <p className="text-xs font-bold uppercase tracking-widest text-white/50 group-hover:text-primary transition-colors">Operations Site: Kisumu</p>
+              </div>  
             </div>
           </div>
         </div>
@@ -95,9 +97,9 @@ export default function About() {
 
         <div className="grid gap-8 md:grid-cols-3">
           {[
-            { name: 'Jane Kipchoge', role: 'Founder & CEO' },
-            { name: 'Dr. Kamau Omondi', role: 'Chief Technology Officer' },
-            { name: 'Amara Okafor', role: 'Chief Operations Officer' },
+            { name: 'Collins Omondi', role: 'Chief Technology Officer' },
+            { name: 'Magic Onyango', role: 'Role' },
+            { name: 'Oscar Otieno', role: 'Role' },
           ].map((member) => (
             <div key={member.name} className="glass-card p-10 text-center group">
               <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 mx-auto mb-8 border border-white/5 group-hover:scale-110 transition-transform"></div>

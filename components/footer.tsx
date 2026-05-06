@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -11,8 +12,13 @@ export function Footer() {
               href="/"
               className="flex items-center gap-2 font-bold text-2xl mb-6"
             >
-              <div className="h-6 w-6 rounded-full bg-primary shadow-glow-red/50"></div>
-              <span>MATMON TECHNOLOGY</span>
+              <Image
+                src="/logos/matmon-tech-full.svg"
+                alt="MATMON TECHNOLOGY"
+                className="h-8 w-auto"
+                width={200}
+                height={32}
+              />
             </Link>
             <p className="text-muted-foreground max-w-xs text-sm leading-relaxed">
               Building the Data Infrastructure Layer for Africa’s Built
@@ -79,7 +85,7 @@ export function Footer() {
                   Compliance
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-primary transition-colors">
                   Press
                 </a>
@@ -92,8 +98,9 @@ export function Footer() {
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
                   FAQ
-                </a>
+                </a> 
               </li>
+                */}
             </ul>
           </div>
 
@@ -118,13 +125,13 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="mailto:dev@matmonafrica.com"
               className="h-10 w-10 rounded-full border border-white/5 flex items-center justify-center hover:bg-white/5 transition-colors"
             >
               <Mail className="h-4 w-4" />
             </a>
             <a
-              href="#"
+              href="tel:+254729931532"
               className="h-10 w-10 rounded-full border border-white/5 flex items-center justify-center hover:bg-white/5 transition-colors"
             >
               <Phone className="h-4 w-4" />

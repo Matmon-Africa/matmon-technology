@@ -13,19 +13,21 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/logos/matmon-tech-icon-black.svg',
         media: '(prefers-color-scheme: light)',
+        type: 'image/svg+xml',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/logos/matmon-tech-icon-white.svg',
         media: '(prefers-color-scheme: dark)',
+        type: 'image/svg+xml',
       },
       {
-        url: '/icon.svg',
+        url: '/logos/matmon-tech-icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/logos/matmon-tech-icon-white.svg',
   },
 }
 
